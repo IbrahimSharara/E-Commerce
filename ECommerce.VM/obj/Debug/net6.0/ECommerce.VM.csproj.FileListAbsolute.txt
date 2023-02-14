@@ -1,0 +1,17 @@
+G:\Work\ECommerce\ECommerce.VM\bin\Debug\net6.0\ECommerce.VM.deps.json
+G:\Work\ECommerce\ECommerce.VM\bin\Debug\net6.0\ECommerce.VM.dll
+G:\Work\ECommerce\ECommerce.VM\bin\Debug\net6.0\ECommerce.VM.pdb
+G:\Work\ECommerce\ECommerce.VM\bin\Debug\net6.0\ECommerce.DAL.dll
+G:\Work\ECommerce\ECommerce.VM\bin\Debug\net6.0\ECommerce.DAL.pdb
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.csproj.AssemblyReference.cache
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.GeneratedMSBuildEditorConfig.editorconfig
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.AssemblyInfoInputs.cache
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.AssemblyInfo.cs
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.csproj.CoreCompileInputs.cache
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.csproj.CopyComplete
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.dll
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\refint\ECommerce.VM.dll
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.pdb
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ref\ECommerce.VM.dll
+G:\Work\ECommerce\ECommerce.VM\bin\Debug\net6.0\ECommerce.VM.runtimeconfig.json
+G:\Work\ECommerce\ECommerce.VM\obj\Debug\net6.0\ECommerce.VM.genruntimeconfig.cache

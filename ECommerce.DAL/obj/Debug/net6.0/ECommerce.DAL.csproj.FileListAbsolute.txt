@@ -1,0 +1,14 @@
+G:\Work\ECommerce\ECommerce.DAL\bin\Debug\net6.0\ECommerce.DAL.deps.json
+G:\Work\ECommerce\ECommerce.DAL\bin\Debug\net6.0\ECommerce.DAL.dll
+G:\Work\ECommerce\ECommerce.DAL\bin\Debug\net6.0\ECommerce.DAL.pdb
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.csproj.AssemblyReference.cache
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.GeneratedMSBuildEditorConfig.editorconfig
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.AssemblyInfoInputs.cache
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.AssemblyInfo.cs
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.csproj.CoreCompileInputs.cache
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.dll
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\refint\ECommerce.DAL.dll
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.pdb
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ref\ECommerce.DAL.dll
+G:\Work\ECommerce\ECommerce.DAL\bin\Debug\net6.0\ECommerce.DAL.runtimeconfig.json
+G:\Work\ECommerce\ECommerce.DAL\obj\Debug\net6.0\ECommerce.DAL.genruntimeconfig.cache
