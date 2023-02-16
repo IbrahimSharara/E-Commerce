@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "G:\\Work\\ECommerce\\ECommerce.WebUI\\wwwroot\\imgs\\1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\1.jpg"
+    },
+    {
       "Id": "G:\\Work\\ECommerce\\ECommerce.WebUI\\wwwroot\\js\\all.min.js",
       "PackagePath": "staticwebassets\\js\\all.min.js"
     },

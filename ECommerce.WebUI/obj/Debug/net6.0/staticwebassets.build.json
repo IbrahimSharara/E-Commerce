@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zLiB+PB0vUAjTnKpRqNBmng4PwqRRpwNGXh31kH/vcw=",
+  "Hash": "8xlROGcbWcShYlZGJ15MQX4BbJeXDsfRKv8KojUIQg8=",
   "Source": "ECommerce.WebUI",
   "BasePath": "_content/ECommerce.WebUI",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "G:\\Work\\ECommerce\\ECommerce.WebUI\\wwwroot\\imgs\\1.jpg",
+      "SourceId": "ECommerce.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\Work\\ECommerce\\ECommerce.WebUI\\wwwroot\\",
+      "BasePath": "_content/ECommerce.WebUI",
+      "RelativePath": "imgs/1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\1.jpg"
     },
     {
       "Identity": "G:\\Work\\ECommerce\\ECommerce.WebUI\\wwwroot\\js\\all.min.js",

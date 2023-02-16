@@ -1,4 +1,4 @@
-﻿@model List<CategoryVM>
+﻿@model List<Category>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Dashboard.cshtml";
@@ -7,8 +7,19 @@
 @section datatable
     {
     <link href="~/lib/datatables/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-
 }
+<!-- Modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop" id="modalBtn" onclick="ShowModal()">
+    Add New Category
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" id="ModalContent">
+    </div>
+</div>
 
 <table class="table table-bordered text-center">
     <thead>
@@ -31,47 +42,29 @@
         </tr>
     </thead>
     <tbody>
-        @*@foreach (var item in Model)
+        @foreach (var item in Model)
         {
             <tr>
                 <td>
 
-                @item.Name
+                    @item.Name
                 </td>
                 <td>
-                @item.Description
+                    @item.Description
                 </td>
                 <td>
-                    <a class="btn btn-info">Details</a>
+                    <button class="btn btn-info" onclick="ShowDetails(@item.ID)">Details</button>
                 </td>
                 <td>
-                    <a class="btn btn-primary">Update</a>
+                    @*<button class="btn btn-primary">Update</button>*@
+                    <a asp-action="Update">Update</a>
                 </td>
                 <td>
-                    <a class="btn btn-danger">delete</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" asp-area="Admin" asp-controller="Category" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
-            
-        }*@
-        <tr>
-            <td>
 
-                Name
-            </td>
-            <td>
-                Description
-            </td>
-            <td>
-                <a class="btn btn-info">Details</a>
-            </td>
-            <td>
-                <a class="btn btn-primary">Update</a>
-            </td>
-            <td>
-                <a class="btn btn-danger">delete</a>
-            </td>
-        </tr>
-
+        }
     </tbody>
 </table>
 
@@ -85,3 +78,26 @@
         });
     </script>
 }
+<script>
+    function ShowModal() {
+        $.ajax({
+            url: "/admin/category/Add",
+            data: {},// if have more than one data to send at the url
+            success: function (result) {
+                document.getElementById("ModalContent").innerHTML = result;
+            }
+        });
+    }
+</script>
+
+<script>
+    function ShowModal() {
+        $.ajax({
+            url: "/admin/category/Add",
+            data: {id , },// if have more than one data to send at the url
+            success: function (result) {
+                document.getElementById("ModalContent").innerHTML = result;
+            }
+        });
+    }
+</script>
