@@ -1,12 +1,17 @@
-﻿@model Category
+﻿@model CategoryVM
 
 <div class="modal-content">
     <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add New Item</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Update @Model.Name</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
-    <form asp-action="Add">
+    <form asp-action="Update">
         <div class="modal-body">
+            <div class="container" hidden>
+                <label asp-for="ID" class="form-label"></label>
+                <input type="text" asp-for="ID" class="form-control" />
+                <span asp-validation-for="ID" class="text-danger"></span>
+            </div>
             <div class="container">
                 <label asp-for="Name" class="form-label"></label>
                 <input type="text" asp-for="Name" class="form-control" />
@@ -20,7 +25,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-success">Add</button>
+            <button type="submit" class="btn btn-success">Update</button>
         </div>
     </form>
 </div>

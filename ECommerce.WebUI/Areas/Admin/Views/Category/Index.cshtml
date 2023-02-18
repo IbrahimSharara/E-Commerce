@@ -10,7 +10,7 @@
 }
 <!-- Modal -->
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+<button type="button" class="btn btn-success mb-3" data-bs-toggle="modal"
         data-bs-target="#staticBackdrop" id="modalBtn" onclick="ShowModal()">
     Add New Category
 </button>
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<table class="table table-bordered text-center">
+<table class="table table-bordered text-center" id="table_id">
     <thead>
         <tr>
             <th>
@@ -53,11 +53,24 @@
                     @item.Description
                 </td>
                 <td>
-                    <button class="btn btn-info" onclick="ShowDetails(@item.ID)">Details</button>
+                    <button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropForDetails" id="modalBtn" onclick="ShowDetails(@item.ID)">
+                        Details
+                    </button>
+                    <div class="modal fade" id="staticBackdropForDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" id="ModalContentForDetails">
+                        </div>
+                    </div>
                 </td>
                 <td>
-                    @*<button class="btn btn-primary">Update</button>*@
-                    <a asp-action="Update">Update</a>
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdropForUpdate" id="modalBtn" onclick="Update(@item.ID)">
+                        Update
+                    </button>
+                    <div class="modal fade" id="staticBackdropForUpdate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" id="ModalContentForUpdate">
+                        </div>
+                    </div>
                 </td>
                 <td>
                     <a asp-action="Delete" asp-route-id="@item.ID" asp-area="Admin" asp-controller="Category" class="btn btn-danger">Delete</a>
@@ -91,12 +104,23 @@
 </script>
 
 <script>
-    function ShowModal() {
+    function ShowDetails(id) {
         $.ajax({
-            url: "/admin/category/Add",
-            data: {id , },// if have more than one data to send at the url
+            url: "/admin/category/Details",
+            data: { id, id },// if have more than one data to send at the url
             success: function (result) {
-                document.getElementById("ModalContent").innerHTML = result;
+                document.getElementById("ModalContentForDetails").innerHTML = result;
+            }
+        });
+    }
+</script>
+<script>
+    function Update(id) {
+        $.ajax({
+            url: "/admin/category/Update",
+            data: { id, id },// if have more than one data to send at the url
+            success: function (result) {
+                document.getElementById("ModalContentForUpdate").innerHTML = result;
             }
         });
     }

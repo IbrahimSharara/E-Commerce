@@ -65,16 +65,34 @@ namespace ECommerce.WebUI.Areas.Admin.Controllers
         }
         #endregion
 
-        #region Update
+        #region Update Category
         public async Task<IActionResult> Update(int id)
         {
             Category cat =await Repo.GetById(id);
-            //CategoryVM cVM = new CategoryVM
-            //{
-            //    Name = cat.Name,
-            //    Description = cat.Description,
-            //};
-            return View( "_Add",cat);
+            CategoryVM cVM = new CategoryVM
+            {
+                Name = cat.Name,
+                Description = cat.Description,
+            };
+            return View( "_Update",cVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(int id , CategoryVM vm)
+        {
+            Category c = new Category
+            {
+                Name = vm.Name,
+                ID = vm.ID,
+                Description = vm.Description
+            };
+            int result =  Repo.UpdateCategory(id, c);
+            if(result >0)
+            {
+                ViewBag.result = "Error";
+            }else
+                ViewBag.result = "Error";
+            return RedirectToAction(nameof(Index));
         }
         #endregion
     }
